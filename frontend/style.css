@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url("assets/background1.png") no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+    align-items: center;
+    background: rgba(60, 26, 170, 0);
+  }
+  
+  .logo {
+    height: 50px;
+  }
+  
+  .icon {
+    height: 30px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+  .user-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .center-box {
+    max-width: 400px;
+    background: rgb(24, 21, 21);
+    margin: 100px auto;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+  }
+  
+  .center-box input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  .center-box button {
+    padding: 10px 20px;
+    border: none;
+    background: #0077ff;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .main {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+  }
+  
+  .video-box video {
+    width: 640px;
+    height: 360px;
+    border-radius: 15px;
+  }
+  
+  .chat-box {
+    flex: 1;
+    background: white;
+    border-radius: 15px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    height: 360px;
+  }
+  
+  .chat-tabs button {
+    margin-right: 10px;
+    padding: 5px 10px;
+    border: none;
+    background: #0077ff;
+    color: white;
+    border-radius: 10px;
+  }
+  
+  .chat-messages {
+    flex: 1;
+    margin: 10px 0;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+  }
+  
+  .chat-input {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .chat-input input {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #aaa;
+    margin-bottom: 5px;
+  }
+  
+  .chat-message {
+    background: #f2f2f2;
+    padding: 10px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    position: relative;
+  }
+  
+  .chat-message .likes {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 14px;
+    color: #e44;
+  }
+  

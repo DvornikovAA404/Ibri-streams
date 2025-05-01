@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Трансляция</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="header">
+    <img src="assets/logo.png" class="logo">
+    <div class="user-info">
+      <span id="username">Имя пользователя</span>
+      <img src="assets/profile.png" class="icon">
+      <img src="assets/logout.png" class="icon" onclick="logout()">
+    </div>
+  </div>
+
+  <div class="main">
+    <div class="video-box">
+      <video controls autoplay>
+        <source src="/static/sample.mp4" type="video/mp4">
+      </video>
+    </div>
+
+    <div class="chat-box">
+      <div class="chat-tabs">
+        <button onclick="switchTab('chat')">Чат</button>
+        <button onclick="switchTab('qa')">Вопрос-ответ</button>
+      </div>
+      <div id="chat-messages" class="chat-messages"></div>
+      <div class="chat-input">
+        <input type="text" id="messageText" placeholder="Введите сообщение...">
+        <button onclick="sendMessage()">Отправить</button>
+        <p id="chatName">Имя в чате: Илья</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
