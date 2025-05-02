@@ -8,10 +8,8 @@
 <body>
   <div class="header">
     <img src="assets/logo.png" class="logo">
-    <div class="user-info">
-      <span id="username">Имя пользователя</span>
-      <img src="assets/profile.png" class="icon">
-      <img src="assets/logout.png" class="icon" onclick="logout()">
+    <div class="user-info" id="user-panel">
+      <!-- Заполняется через JS -->
     </div>
   </div>
 
@@ -27,11 +25,19 @@
         <button onclick="switchTab('chat')">Чат</button>
         <button onclick="switchTab('qa')">Вопрос-ответ</button>
       </div>
-      <div id="chat-messages" class="chat-messages"></div>
-      <div class="chat-input">
-        <input type="text" id="messageText" placeholder="Введите сообщение...">
-        <button onclick="sendMessage()">Отправить</button>
-        <p id="chatName">Имя в чате: Илья</p>
+      <div id="chat-messages" class="chat-messages">
+        <!-- Пример сообщений -->
+        <div class="chat-message">
+          <b>Елена</b><br>Привет, видно хорошо!
+          <div class="likes">❤️ 2</div>
+        </div>
+        <div class="chat-message">
+          <b>Иван</b><br>Когда будет перерыв?
+          <div class="likes">❤️ 1</div>
+        </div>
+      </div>
+      <div class="chat-input" id="chatInputArea">
+        <!-- Заполняется через JS -->
       </div>
     </div>
   </div>
